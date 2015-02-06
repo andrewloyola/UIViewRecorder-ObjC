@@ -46,7 +46,6 @@
     NSTimeInterval seconds = [self.referenceDate timeIntervalSinceNow];
     if((-1 * seconds) > 0){
         NSLog(@"Recorded %ld frames\nDuration:%f seconds\nStored in : %@", (long)self.imageCounter, -1 * seconds, [self outputPathString]);
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     }
 }
 
